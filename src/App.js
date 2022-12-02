@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div>
+      <article class="recipe">
+        <h2>Chicken Vindaloo</h2>
+
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          “Vindaloo” is a popular Indian{" "}
+          <a className="ball" href="small">
+            curry dish
+          </a>{" "}
+          that calls for meat to be marinated in a highly flavorful spicy
+          mixture with vinegar, then quickly cooked up when you’re ready to eat.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>
+          While this dish has a long list of spices, most are quite common in
+          the average spice rack. If you find you're missing one, it's not a
+          deal breaker. You will still have a lovely, fragrant curry.
+        </p>
+        <aside>
+          <p>
+            Quick warning:{" "}
+            <strong>
+              this recipe is <em>spicy. </em>
+            </strong>
+            <a className="cat" href="box">
+              {" "}
+              Click here
+            </a>{" "}
+            for an alternative recipe with less heat.
+          </p>
+        </aside>
+      </article>
     </div>
   );
 }
